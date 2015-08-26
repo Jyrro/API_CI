@@ -30,47 +30,37 @@
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Menu <b class="caret"></b></a>
               <ul class="dropdown-menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
+                <li><a href="#item_value">Changes on Item value</a></li>
+                <li><a href="#item_pop">Changes on Item popularity</a></li>
                 <li class="divider"></li>
-                <li class="dropdown-header">Nav header</li>
-                <li><a href="#">Separated link</a></li>
-                <li><a href="#">One more separated link</a></li>
+                <li><a href="#item_AP">See AP Items</a></li>
+                <li><a href="#champions">See Mage Champions</a></li>
               </ul>
             </li>
-          </ul>
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="../navbar/">Default</a></li>
-            <li class="active"><a href="./">Static top</a></li>
-            <li><a href="../navbar-fixed-top/">Fixed top</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
     </div>
     <div class="container">
         <h1>Riot API Challenge</h1>
-        <h4>What change on AP items ?</h4>
     </div>
-    <div class="container">
-      Enter an AP champ or an Item
-          <div class="form-group">
-            <div class="input-group input-group-hg">
-              <input ng-model="SearchText" type="text" class="form-control">
-              <span class="input-group-btn">
-                <button class="btn btn-default" type="button">Go!</button>
-              </span>
-            </div><!-- /input-group -->
-          </div><!-- /.form-group -->
+    <div id="item_value" class="container">
+      <h3 >What change on AP items value ?</h3>
+      <div class="col-md-6">5.11</div>
+      <div class="col-md-6">5.13</div>
     </div>
-    <div class="container">
-      <h3>Choose an Item</h3>
+     <div id="item_pop" class="container">
+      <h3 >What change on AP items popularity ?</h3>
+       <div class="col-md-6">5.11</div>
+      <div class="col-md-6">5.13</div>
+    </div>
+    
+    <div id="item_AP" class="container">
+      <h3 >Choose an Item</h3>
       <input ng-model="Search"> 
 <!--      {{objet.data.id}}-->
     <div ng-repeat='obj in objet'>
@@ -78,8 +68,8 @@
       </div>
       
     </div>
-    <div class="container">
-      <h3>Or choose a champ</h3>
+    <div id="champions" class="container">
+      <h3 >Choose a AP champion</h3>
       <div></div>
       
     </div>
